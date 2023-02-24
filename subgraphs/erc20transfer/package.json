@@ -1,0 +1,20 @@
+{
+  "name": "erc20-transfer",
+  "version": "0.0.1",
+  "description": "Subgraph for indexing all ERC20 token balances and approvals",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "preparePolygon": "mustache ../../config/matic.json subgraph.template.yaml > subgraph.yaml && graph codegen",
+    "prepareMumbai": "mustache ../../config/mumbai.json subgraph.template.yaml > subgraph.yaml && graph codegen",
+    "deployMumbai": "graph deploy alberthuang24/sodium80001erc20transfer --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deployPolygon": "graph deploy alberthuang24/sodium137erc20transfer --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
+  },
+  "author": "sodiumlabs",
+  "license": "MIT",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.37.1",
+    "@graphprotocol/graph-ts": "^0.29.0",
+    "mustache": "^4.0.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "sodium-subgraphs",
+  "version": "0.0.1",
+  "description": "Subgraph for indexing all ERC20 token balances and approvals",
+  "scripts": {
+    "preparePolygon": "wsrun -c preparePolygon",
+    "prepareMumbai": "wsrun -c prepareMumbai",
+    "build": "graph build",
+    "deployMumbai": "wsrun -c deployMumbai",
+    "deployPolygon": "wsrun -c deployPolygon"
+  },
+  "workspaces": [
+    "subgraphs/*"
+  ],
+  "author": "sodiumlabs",
+  "license": "MIT",
+  "devDependencies": {
+    "wsrun": "^5.2.4"
+  }
+}

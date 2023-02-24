@@ -1,0 +1,12 @@
+type TokenTransfer @entity {
+  id: ID!
+  tokenAddress: Bytes!
+  blockTimestamp: Int!
+  blockNumber: BigInt!
+  blockHash: Bytes!
+  txnHash: Bytes!
+  logIndex: Int!
+  amount: BigInt!
+  from: Bytes!
+  to: Bytes!
+}

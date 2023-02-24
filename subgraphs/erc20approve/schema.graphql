@@ -1,0 +1,12 @@
+type TokenApproval @entity {
+  id: ID!
+  tokenAddress: Bytes!
+  ownerAccount: Bytes!
+  spenderAccount: Bytes!
+  value: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: Int!
+  blockHash: Bytes!
+  txnHash: Bytes!
+  logIndex: Int!
+}

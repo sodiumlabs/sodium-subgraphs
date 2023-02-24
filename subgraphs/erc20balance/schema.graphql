@@ -1,0 +1,6 @@
+type TokenBalance @entity {
+  id: ID!
+  tokenAddress: Bytes!
+  account: Bytes!
+  value: BigInt!
+}
