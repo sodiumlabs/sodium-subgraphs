@@ -1,6 +1,6 @@
-import { BigInt, ethereum } from "@graphprotocol/graph-ts";
+import { BigInt } from "@graphprotocol/graph-ts";
 
-import { Approval, ERC20, Transfer } from "../generated/ERC20/ERC20";
+import { Transfer } from "../generated/ERC20/ERC20";
 import {
   TokenBalance,
 } from "../generated/schema";

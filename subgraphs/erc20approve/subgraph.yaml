@@ -5,10 +5,10 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ERC20
-    network: matic
+    network: sodiumt
     source:
       abi: ERC20
-      startBlock: 39362230
+      startBlock: 1
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6

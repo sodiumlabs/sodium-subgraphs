@@ -5,9 +5,11 @@
   "scripts": {
     "preparePolygon": "wsrun -c preparePolygon",
     "prepareMumbai": "wsrun -c prepareMumbai",
+    "prepareSodiumt": "wsrun -c prepareSodiumt",
     "build": "graph build",
     "deployMumbai": "wsrun -c deployMumbai",
-    "deployPolygon": "wsrun -c deployPolygon"
+    "deployPolygon": "wsrun -c deployPolygon",
+    "deploySodiumt": "version=3 && wsrun -c deploySodiumt"
   },
   "workspaces": [
     "subgraphs/*"
